@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_about_app"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="cz.paulinky.sbohemnacestach.AboutApp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/about_app_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:textColor="@color/black"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="7000dp"
+            android:background="@drawable/sky9x"
+            android:scaleType="fitXY"
+            android:layout_alignBottom="@id/about_app_text1"
+            />
+
+    </RelativeLayout>
+
+</ScrollView>
