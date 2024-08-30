@@ -3,12 +3,10 @@ package cz.paulinky.sbohemnacestach;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-import static android.R.attr.text;
-import static android.R.attr.value;
+import androidx.appcompat.app.AppCompatActivity;
 
 public class TitleActivity extends AppCompatActivity {
 

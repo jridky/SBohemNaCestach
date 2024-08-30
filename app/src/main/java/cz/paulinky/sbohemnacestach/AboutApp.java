@@ -1,7 +1,7 @@
 package cz.paulinky.sbohemnacestach;
 
 import android.os.Build;
-import android.support.v7.app.AppCompatActivity;
+
 import android.os.Bundle;
 import android.text.Html;
 import android.text.method.LinkMovementMethod;
@@ -11,6 +11,8 @@ import android.widget.TextView;
 import org.w3c.dom.Text;
 
 import static cz.paulinky.sbohemnacestach.TitleActivity.textSize;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class AboutApp extends AppCompatActivity {
 

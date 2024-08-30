@@ -1,26 +1,18 @@
 package cz.paulinky.sbohemnacestach;
 
 import android.content.Intent;
-import android.content.SharedPreferences;
-import android.content.res.Resources;
-import android.net.Uri;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.DividerItemDecoration;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.util.TypedValue;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.DividerItemDecoration;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
-
-import static android.R.attr.value;
-import static cz.paulinky.sbohemnacestach.TitleActivity.prefs;
-import static cz.paulinky.sbohemnacestach.TitleActivity.textSize;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -93,22 +85,17 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
 
 
-        switch (item.getItemId()) {
-
-            case R.id.action_text_size_change:
-                Intent myIntent2 = new Intent(MainActivity.this, SeekbarActivity.class);
-                MainActivity.this.startActivity(myIntent2);
-                return true;
-
-            case R.id.action_about_app:
-                Intent myIntent = new Intent(MainActivity.this, AboutApp.class);
-                MainActivity.this.startActivity(myIntent);
-                return true;
-
-            default:
-                return super.onOptionsItemSelected(item);
-
+        int itemId = item.getItemId();
+        if (itemId == R.id.action_text_size_change) {
+            Intent myIntent2 = new Intent(MainActivity.this, SeekbarActivity.class);
+            MainActivity.this.startActivity(myIntent2);
+            return true;
+        } else if (itemId == R.id.action_about_app) {
+            Intent myIntent = new Intent(MainActivity.this, AboutApp.class);
+            MainActivity.this.startActivity(myIntent);
+            return true;
         }
+        return super.onOptionsItemSelected(item);
     }
 
 

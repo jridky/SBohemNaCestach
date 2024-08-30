@@ -1,17 +1,17 @@
 package cz.paulinky.sbohemnacestach;
 
+import static cz.paulinky.sbohemnacestach.TitleActivity.textSize;
+
 import android.content.Context;
 import android.graphics.Color;
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import java.util.List;
+import androidx.recyclerview.widget.RecyclerView;
 
-import static cz.paulinky.sbohemnacestach.TitleActivity.textSize;
+import java.util.List;
 
 /**
  * Created by ales on 10.2.17.
@@ -87,7 +87,7 @@ public class PrayersAdapter extends
 
         if (itemType == ITEM_TYPE_NORMAL) {
             textView2.setBackgroundColor(Color.WHITE);
-        } else if (itemType == ITEM_TYPE_COLORED){
+        } else if (itemType == ITEM_TYPE_COLORED) {
 //            textView2.setBackgroundColor(Color.rgb(232, 234, 246));
             textView2.setBackgroundColor(Color.rgb(227, 242, 253));
         }
@@ -105,7 +105,7 @@ public class PrayersAdapter extends
 
     @Override
     public int getItemViewType(int position) {
-        if (position%2 == 0) {
+        if (position % 2 == 0) {
             return ITEM_TYPE_NORMAL;
         } else {
             return ITEM_TYPE_COLORED;

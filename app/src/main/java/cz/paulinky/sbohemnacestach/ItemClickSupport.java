@@ -1,7 +1,9 @@
 package cz.paulinky.sbohemnacestach;
 
-import android.support.v7.widget.RecyclerView;
+
 import android.view.View;
+
+import androidx.recyclerview.widget.RecyclerView;
 
 /**
  * Created by ales on 11.2.17.

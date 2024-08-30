@@ -1,19 +1,14 @@
 package cz.paulinky.sbohemnacestach;
 
-import android.content.Intent;
-import android.content.SharedPreferences;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
-import android.widget.SeekBar;
-import android.widget.TextView;
-import android.widget.Toast;
-
-import static cz.paulinky.sbohemnacestach.R.id.testText;
 import static cz.paulinky.sbohemnacestach.TitleActivity.prefs;
 import static cz.paulinky.sbohemnacestach.TitleActivity.textSize;
+
+import android.content.SharedPreferences;
+import android.os.Bundle;
+import android.widget.SeekBar;
+import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class SeekbarActivity extends AppCompatActivity {
 
